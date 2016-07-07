@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+<FrameLayout
+    android:id="@+id/ff_content_id"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1"
+    android:orientation="vertical" />
+    <RadioGroup
+        android:id="@+id/rg_id"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/rb_qiushi_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/radiobuttonBootomStyle"
+            android:layout_marginLeft="20dp"
+            android:checked="true"
+            android:drawableTop="@drawable/qiushi_selector"
+            android:text="糗事"
+            />
+        <RadioButton
+            android:id="@+id/rb_qiuyoucircle_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/radiobuttonBootomStyle"
+            android:layout_marginLeft="30dp"
+            android:text="糗友圈"
+            android:drawableTop="@drawable/qiuyoucircle_selector"
+            android:checked="false" />
+        <RadioButton
+            android:id="@+id/rb_message_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/radiobuttonBootomStyle"
+            android:layout_marginLeft="30dp"
+            android:text="小纸条"
+            android:drawableTop="@drawable/message_selector"/>
+        <RadioButton
+            android:id="@+id/rb_mine_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:layout_marginLeft="30dp"
+            android:text="我"
+            android:drawableTop="@drawable/mine_selector"
+            style="@style/radiobuttonBootomStyle"
+            />
+    </RadioGroup>
+</LinearLayout>
